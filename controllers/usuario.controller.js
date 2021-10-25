@@ -25,8 +25,18 @@ const putUsuario = (req,res = response)=>{
     })
 }
 
+const delUsuario = (req,res = response)=>{
+    //const body = req.body
+    const id = req.params.id
+    res.json({
+        msg:'Put usuario - controller',
+        id
+    })
+}
+
 module.exports = {
     getUsuario,
     postUsuario,
-    putUsuario
+    putUsuario,
+    delUsuario
 }
