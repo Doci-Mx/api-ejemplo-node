@@ -7,6 +7,6 @@ const { getUsuario,
 const router  = Router();
 
 router.get('/', getUsuario )
-router.post('/',postUsuario)
+router.post('/',postUsuario);
 router.put('/:id',putUsuario)
   module.exports = router
